@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 
 const app = express()
-app.use(cors())
+app.use(cors({ origin: "http://localhost:3000" }))
 
 app.use("/", (req, res) => {
   console.log("opened home page")
