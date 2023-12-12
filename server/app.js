@@ -5,7 +5,6 @@ const app = express()
 app.use(cors({ origin: "http://localhost:3000" }))
 
 app.use("/", (req, res) => {
-  console.log("opened home page")
   res.json({ ok: "it works!" })
 })
 
